@@ -1,6 +1,6 @@
-body{
+body {
   background-color: grey;
-  width:100%;
+  width: 100%;
   font-family: sans-serif;
 }
 
@@ -10,48 +10,54 @@ h1, p[id="description"] {
   color: white;
 }
 
-form{
-  margin: 0 auto;
-}
-
-div[id="body"]{
-  width:70%;
-  background-color: white;
-  margin:0 auto;
-}
-
-label{
-  display:block;
-  margin: 0.5em 0;
-}
-
-input, select, textarea{
-  display:block;
-  width: 95%;
-  padding-top:5px;
-}
-
-input[id="yes"], input[id="no"]{
-  display:inline;
-  width: unset;
-}
-input[type="checkbox"]{
-  width: unset;
-  display: unset;
-}
-input[type="submit"]:hover{
-  background-color: white;
-}
-fieldset{
-  border:none;
-  margin: 0 auto;
-  
-}
 form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
+  width: 90%;
+  max-width: 600px;
   margin: 0 auto;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   padding-top: 0;
+}
+
+div[id="body"] {
+  width: 70%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+label {
+  display: block;         
+  margin: 0.5em 0;        
+}
+
+
+input, select, textarea {
+  display: block;
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 1em;      
+}
+
+
+label input[type="checkbox"], label input[type="radio"] {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 8px;
+}
+
+input[type="submit"]:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
 }
